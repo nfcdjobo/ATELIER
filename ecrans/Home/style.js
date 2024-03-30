@@ -75,7 +75,7 @@ export const dashboardStyle = StyleSheet.create({
     phoneAndGenre: {
         flexDirection: "row",
         justifyContent: "space-between",
-        width: '78%'
+        width: '75.7%'
     },
 
     clientName: {
