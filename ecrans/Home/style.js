@@ -2,10 +2,11 @@ import { StyleSheet } from "react-native";
 import { COLORS, PADDING } from "../../outils/constantes";
 
 export const dashboardStyle = StyleSheet.create({
+    
     header: {
         flexDirection: 'row',
-        justifyContent: "space-between",
-        alignItems: "center",
+        justifyContent: 'space-between',
+        alignItems: 'center', // Centrer verticalement les éléments
         paddingHorizontal: PADDING.horizontal,
         paddingVertical: PADDING.vertical,
         backgroundColor: '#8485DD',

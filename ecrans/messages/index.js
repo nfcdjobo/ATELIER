@@ -8,7 +8,7 @@ import { dashboardStyle } from '../Home/style';
 
 const Messages = ({navigation}) => {
   return (
-    <ScrollView>
+    <View style={{ flex: 1 }}>
       <View style={dashboardStyle.header}>
         <Text style={dashboardStyle.userName}>DJOBO Carêm</Text>
         <Image source={require('../../assets/Font/user.jpg')} style={dashboardStyle.userImage}/>
@@ -19,8 +19,7 @@ const Messages = ({navigation}) => {
         data={fakeChats}
         keyExtractor={item => item.id}
         showsVerticalScrollIndicator={false}
-        renderItem={
-          ({item})=>{
+        renderItem={({item})=>{
             return(
               <Chats item={item} navigation={navigation}/>
             )
@@ -28,9 +27,7 @@ const Messages = ({navigation}) => {
         }
         
       />
-    </ScrollView>
-    
-    // <Chats item={fakeChats}/>
+    </View>
   )
 }
 
